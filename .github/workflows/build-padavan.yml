@@ -37,9 +37,9 @@ jobs:
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
-    - name: Build Firmware
+    - name: Build Firmware-JCG-Y2
       env:
-        TNAME: WR1200JS
+        TNAME: JCG-Y2
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
